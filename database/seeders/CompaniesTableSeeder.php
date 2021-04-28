@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Companie;
+use App\Models\Company;
 use Faker\Factory as Faker;
 class CompaniesTableSeeder extends Seeder
 {
@@ -17,7 +17,7 @@ class CompaniesTableSeeder extends Seeder
         //
         $Faker =Faker::Create();
         for($i=0;$i<=35;$i++) {
-            Companie::create([
+            Company::create([
                 'name'=>$Faker->company,
                 'nit'=>$Faker->creditCardNumber,
                 'address'=>$Faker->address,
